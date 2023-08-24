@@ -2,6 +2,19 @@
 #include <stddef.h>
 
 /**
+ * max - Returns the maximum of two numbers.
+ * @a: First number.
+ * @b: Second number.
+ *
+ * Return: The maximum of a and b.
+ */
+size_t max(size_t a, size_t b)
+{
+    return (a > b ? a : b);
+}
+
+
+/**
  * binary_tree_height - Measures the height of a binary tree.
  * @tree: A pointer to the root node of the tree to measure the height.
  *
@@ -39,17 +52,5 @@ int binary_tree_is_perfect(const binary_tree_t *tree)
     }
 
     return (0);
-}
-
-/**
- * max - Returns the maximum of two numbers.
- * @a: First number.
- * @b: Second number.
- *
- * Return: The maximum of a and b.
- */
-size_t max(size_t a, size_t b)
-{
-    return (a > b ? a : b);
 }
 
